@@ -1,6 +1,21 @@
-.dashboard {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+body {
+    background: #E7F3F1;
+
+    .dashboard {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+        h1 {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 2.5em;
+        }
+
+        .title {
+            font-family: 'Open Sans', sans-serif;
+            width: 100vw;
+            margin-bottom: 1em;
+        }
+    }
 }

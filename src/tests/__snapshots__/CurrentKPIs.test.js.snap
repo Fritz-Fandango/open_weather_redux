@@ -1,0 +1,85 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing CurrentKPIs component renders CurrentKPIs 1`] = `
+<section
+  className="kpiHeader"
+>
+  <h2>
+    Today's weather
+  </h2>
+  <hr />
+  <div
+    className="cardDeck"
+  >
+    <button
+      className="dataCard"
+    >
+      <h3>
+        10:31:48 AM
+      </h3>
+      <h4>
+        Time Stamp
+      </h4>
+      <p>
+        Nullam volutpat et eros ut tristique.
+      </p>
+    </button>
+    <button
+      className="dataCard"
+    >
+      <h3>
+        275.09
+         °F
+      </h3>
+      <h4>
+        Current Temperature
+      </h4>
+      <p>
+        Nullam volutpat et eros ut tristique.
+      </p>
+    </button>
+    <button
+      className="dataCard"
+    >
+      <h3>
+        279.79
+         °F
+      </h3>
+      <h4>
+        Feels Like
+      </h4>
+      <p>
+        Nullam volutpat et eros ut tristique.
+      </p>
+    </button>
+    <button
+      className="dataCard"
+    >
+      <h3>
+        15
+         hPa
+      </h3>
+      <h4>
+        Atmospheric Pressure
+      </h4>
+      <p>
+        Nullam volutpat et eros ut tristique.
+      </p>
+    </button>
+    <button
+      className="dataCard"
+    >
+      <h3>
+        300
+         mi/hr
+      </h3>
+      <h4>
+        Current wind speed
+      </h4>
+      <p>
+        Nullam volutpat et eros ut tristique.
+      </p>
+    </button>
+  </div>
+</section>
+`;

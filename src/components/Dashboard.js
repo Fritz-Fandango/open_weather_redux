@@ -25,9 +25,14 @@ class Dashboard extends Component {
 
         return (
             <div className='dashboard'>
+                <h1>Weather App</h1>
                 {this.props.weather.current &&
                     <CurrentKPIs current={this.props.weather.current} />
                 }
+                <div className='title'>
+                    <h2>Forecasted weather</h2>
+                    <hr />
+                </div>
                 {this.props.weather?.daily?.map(today =>
                     <Card
                         key={today.dt}

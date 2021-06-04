@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Card component renders Card 1`] = `
+<div
+  className="card"
+>
+  <img
+    alt="Avatar"
+    src="http://openweathermap.org/img/wn/undefined@2x.png"
+    style={
+      Object {
+        "width": "100%",
+      }
+    }
+  />
+  <div
+    className="container"
+  >
+    <p>
+      Date: 
+      Invalid Date
+    </p>
+    <p>
+      Min temp: 
+      °F
+    </p>
+    <p>
+      Max temp: 
+      °F
+    </p>
+    <p>
+      Humidty: 
+      %
+    </p>
+    <p>
+      Sunrise: 
+      Invalid Date
+    </p>
+    <p>
+      Sunset: 
+      Invalid Date
+    </p>
+  </div>
+</div>
+`;

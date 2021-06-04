@@ -2,13 +2,13 @@ import React, { Component } from 'react';
 import '../styles/Card.scss';
 
 
-function formatDate (timestamp) {
+export const formatDate = (timestamp) => {
     const event = new Date(timestamp);
 
     return event.toLocaleDateString('en-US');
 }
 
-function formatTime (timestamp) {
+export const formatTime = (timestamp) => {
     const event = new Date(timestamp);
 
     return event.toLocaleTimeString('en-US');

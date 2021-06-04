@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&display=swap');
+
 .card {
+    background-color: white;
     border-radius: 5px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     flex-basis: auto;
@@ -8,6 +11,9 @@
         box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     }
 
+    p {
+        font-family: 'Open Sans', sans-serif;
+    }
     img {
         border-radius: 5px 5px 0 0;
     }
