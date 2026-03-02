@@ -18,7 +18,8 @@
     "web-vitals": "^1.0.1"
   },
   "devDependencies": {
-    "axios": "^1.13.5"
+    "axios": "^1.13.5",
+    "webpack-dev-server": "^5.2.3"
   },
   "scripts": {
     "start": "react-scripts start",
