@@ -20,7 +20,7 @@
   },
   "devDependencies": {
     "axios": "^1.15.2",
-    "webpack-dev-server": "^5.2.3"
+    "webpack-dev-server": "^5.2.4"
   },
   "scripts": {
     "start": "react-scripts start",
