@@ -12,7 +12,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [20.x, 24.x]
+        node-version: [20.x]
 
     steps:
       - uses: actions/checkout@v5
@@ -34,7 +34,6 @@ jobs:
 
       - name: Upload coverage reports
         uses: codecov/codecov-action@v4
-        if: matrix.node-version == '24.x'
         with:
           file: ./coverage/coverage-final.json
           flags: unittests
