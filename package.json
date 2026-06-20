@@ -20,7 +20,7 @@
   },
   "devDependencies": {
     "axios": "^1.16.0",
-    "webpack-dev-server": "^5.2.4"
+    "webpack-dev-server": "^5.2.5"
   },
   "overrides": {
     "underscore": ">=1.13.8"
