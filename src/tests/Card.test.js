@@ -22,7 +22,6 @@ describe("Testing date formatting", () => {
 
 describe("Testing Card component", () => {
   const propsObj = {
-    key: 1618308000,
     dateTime: 1618308000,
     humidity: 15,
     icon: "10d",
@@ -33,7 +32,7 @@ describe("Testing Card component", () => {
   };
 
   it("renders Card", () => {
-    const wrapper = <Card {...propsObj} />;
+    const wrapper = <Card key={1618308000} {...propsObj} />;
 
     const tree = renderer.create(wrapper).toJSON();
     expect(tree).toMatchSnapshot();
