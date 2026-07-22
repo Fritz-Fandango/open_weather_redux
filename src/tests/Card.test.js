@@ -1,4 +1,5 @@
-import renderer from "react-test-renderer";
+import { render } from "@testing-library/react";
+import "@testing-library/jest-dom/extend-expect";
 
 import { formatDate, formatTime } from "../components/Card";
 
@@ -32,9 +33,8 @@ describe("Testing Card component", () => {
   };
 
   it("renders Card", () => {
-    const wrapper = <Card key={1618308000} {...propsObj} />;
+    const { asFragment } = render(<Card key={1618308000} {...propsObj} />);
 
-    const tree = renderer.create(wrapper).toJSON();
-    expect(tree).toMatchSnapshot();
+    expect(asFragment()).toMatchSnapshot();
   });
 });
