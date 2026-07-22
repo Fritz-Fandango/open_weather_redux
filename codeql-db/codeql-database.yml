@@ -1,0 +1,13 @@
+---
+sourceLocationPrefix: /Users/martin/Projects/open_weather_redux
+baselineLinesOfCode: 306
+unicodeNewlines: true
+columnKind: utf16
+primaryLanguage: javascript
+creationMetadata:
+  sha: aa9e73a30c9716bd042ebd7497df1df72c2f2bad
+  cliVersion: 2.26.1
+  creationTime: 2026-07-22T18:13:45.567421Z
+finalised: true
+overlayBaseDatabase: false
+overlayDatabase: false
