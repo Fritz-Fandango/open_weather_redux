@@ -30,7 +30,12 @@ jobs:
         run: npm ci
 
       - name: Run tests
-        run: npm test -- --coverage --watchAll=false
+        run: npm test -- --coverage --watchAll=false --ci
+
+      - name: Check for stale snapshots
+        run: |
+          npx react-scripts test --watchAll=false -u
+          git diff --exit-code -- '**/__snapshots__/*.snap'
 
       - name: Build
         run: npm run build
