@@ -1,5 +1,7 @@
 # Open Weather Redux
 
+[![codecov](https://codecov.io/gh/Fritz-Fandango/open_weather_redux/graph/badge.svg)](https://codecov.io/gh/Fritz-Fandango/open_weather_redux)
+
 A weather dashboard built with React, Redux and Vite, using the OpenWeather One Call API.
 
 ## Setup
