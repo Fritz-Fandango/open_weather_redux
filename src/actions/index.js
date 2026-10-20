@@ -1,13 +1,13 @@
 import axios from 'axios';
 
 const {
-    REACT_APP_WEATHER_URL,
-    REACT_APP_LATITUDE_PARAM,
-    REACT_APP_LONGITUDE_PARAM,
-    REACT_APP_EXCLUDE_PARAM,
-    REACT_APP_UNITS_PARAM,
-    REACT_APP_WEATHER_API_KEY
-} = process.env;
+    VITE_WEATHER_URL,
+    VITE_LATITUDE_PARAM,
+    VITE_LONGITUDE_PARAM,
+    VITE_EXCLUDE_PARAM,
+    VITE_UNITS_PARAM,
+    VITE_WEATHER_API_KEY
+} = import.meta.env;
 
 export function weatherHasErrored(bool) {
     return {
@@ -31,7 +31,7 @@ export function weatherFetchDataSuccess(weather) {
 }
 
 export function weatherFetchData() {
-    const apiURL = `${REACT_APP_WEATHER_URL}?lat=${REACT_APP_LATITUDE_PARAM}&lon=${REACT_APP_LONGITUDE_PARAM}&exclude=${REACT_APP_EXCLUDE_PARAM}&units=${REACT_APP_UNITS_PARAM}&appid=${REACT_APP_WEATHER_API_KEY}`;
+    const apiURL = `${VITE_WEATHER_URL}?lat=${VITE_LATITUDE_PARAM}&lon=${VITE_LONGITUDE_PARAM}&exclude=${VITE_EXCLUDE_PARAM}&units=${VITE_UNITS_PARAM}&appid=${VITE_WEATHER_API_KEY}`;
 
     return (dispatch) => {
         dispatch(weatherIsLoading(true));

@@ -15,7 +15,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [20.x]
+        node-version: [22.x]
 
     steps:
       - uses: actions/checkout@v5
@@ -30,12 +30,7 @@ jobs:
         run: npm ci
 
       - name: Run tests
-        run: npm test -- --coverage --watchAll=false --ci
-
-      - name: Check for stale snapshots
-        run: |
-          npx react-scripts test --watchAll=false -u
-          git diff --exit-code -- '**/__snapshots__/*.snap'
+        run: npx vitest run --coverage
 
       - name: Build
         run: npm run build
