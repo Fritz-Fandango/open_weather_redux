@@ -38,8 +38,8 @@ export function weatherFetchData() {
         return axios
             .get(apiURL)
             .then((resp) => {
-                if(resp.statusText.toLocaleLowerCase() !== 'ok') {
-                    throw Error(resp.statusText);
+                if(resp.status !== 200) {
+                    throw Error(resp.statusText || `Request failed with status ${resp.status}`);
                 }
                 dispatch(weatherIsLoading(false))
                 return resp.data;

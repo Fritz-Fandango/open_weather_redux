@@ -13,6 +13,8 @@ export default defineConfig({
     setupFiles: './src/setupTests.js',
     coverage: {
       provider: 'v8',
+      include: ['src/**'],
+      exclude: ['src/tests/**', 'src/setupTests.js'],
       reporter: ['text', 'json'],
     },
   },
